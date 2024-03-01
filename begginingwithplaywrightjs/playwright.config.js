@@ -7,8 +7,10 @@ const { defineConfig, devices } = require('@playwright/test');
 module.exports = defineConfig({
   testDir: './tests',
 
+// maxtime the test will wait
   timeout: 30 * 1000,
   expect:{
+    // time out for assertions only
     timeout:5000
   },
 
@@ -20,7 +22,7 @@ module.exports = defineConfig({
   use: {
     //properties to be used on the test cases
     browserName: 'chromium',
-    headless: false
+    headless: true
   }
 });
 
