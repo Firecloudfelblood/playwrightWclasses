@@ -1,4 +1,4 @@
-const TestScript = require("./TestScript");
+const TestScript = require("./Actions/TestScript");
 
 (async ()=>{
     const testscript = new TestScript();
